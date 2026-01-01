@@ -1,10 +1,4 @@
-import {
-  Box,
-  IconButton,
-  TextField,
-  Tooltip,
-  Typography,
-} from "@mui/material";
+import { Box, IconButton, TextField, Tooltip, Typography } from "@mui/material";
 import SendIcon from "@mui/icons-material/Send";
 import UploadFileIcon from "@mui/icons-material/UploadFile";
 
@@ -20,7 +14,7 @@ const ChatInput = ({ input, setInput, onSend, onFileUpload }) => {
           fontStyle: "italic",
         }}
       >
-        Upload a document (TXT, PDF, DOCX) or image (JPG, PNG) to extract text
+        Upload a document (TXT, PDF, DOCX) or image (JPG, PNG)
       </Typography>
 
       {/* Input Row */}
@@ -59,8 +53,7 @@ const ChatInput = ({ input, setInput, onSend, onFileUpload }) => {
           <IconButton
             component="label"
             sx={{
-              background:
-                "linear-gradient(135deg, #4facfe, #00f2fe)",
+              background: "linear-gradient(135deg, #4facfe, #00f2fe)",
               color: "#0f2027",
               borderRadius: 3,
               p: 1.4,
@@ -88,8 +81,7 @@ const ChatInput = ({ input, setInput, onSend, onFileUpload }) => {
         <IconButton
           onClick={onSend}
           sx={{
-            background:
-              "linear-gradient(135deg, #4facfe, #00f2fe)",
+            background: "linear-gradient(135deg, #4facfe, #00f2fe)",
             color: "#0f2027",
             borderRadius: 3,
             p: 1.4,
