@@ -52,9 +52,9 @@ const Home = () => {
           <Grid item xs={12} md={6}>
             <Stack spacing={3}>
               <Box sx={{ display: "flex", alignItems: "center", gap: 2 }}>
-                <img src={logo} alt="RagBot" style={{ width: 48 }} />
+                <img src={logo} alt="RagBot" style={{ width: 60 }} />
                 <Typography variant="h6" sx={{ color: "#00c6ff" }}>
-                  RagBot
+                  An AI Bot
                 </Typography>
               </Box>
 
@@ -90,20 +90,6 @@ const Home = () => {
                   onClick={() => navigate("/chat")}
                 >
                   Start Chat
-                </Button>
-
-                <Button
-                  size="large"
-                  variant="outlined"
-                  sx={{
-                    px: 4,
-                    py: 1.5,
-                    borderColor: "#00c6ff",
-                    color: "#00c6ff",
-                    ":hover": { borderColor: "#0072ff" },
-                  }}
-                >
-                  Learn More
                 </Button>
               </Stack>
             </Stack>
